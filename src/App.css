@@ -1,0 +1,22 @@
+@import './reset.css';
+
+:root{
+  --dark-bg: #111111;
+  --grey-bg: #303030;
+  --active-bg: #595959;
+  --light-grey-bg: #D7D7D7;
+  --white-bg: #fff;
+  --ft-roboto: 'Roboto', sans-serif;
+  --fw-rg: 300;
+  --fw-md: 400;
+  --fw-bd: 500;
+  --container-sm: 0 1.25rem;
+  --container-md: 0 5rem;
+  --container-lg: 0 10rem;
+}
+
+.main-container{
+  display: block;
+  position: relative;
+}
+
