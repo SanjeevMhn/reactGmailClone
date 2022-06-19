@@ -1,9 +1,9 @@
 .sideNav {
     background-color: var(--dark-bg);
     padding: 15px 0;
-    position: fixed;
-    width: 254px;
-    height: 100vh;
+    // position: fixed;
+    //width: 254px;
+    flex: 0 0 254px;
     .composeMailContainer {
         padding-left: 8px;
         padding-right: 8px;

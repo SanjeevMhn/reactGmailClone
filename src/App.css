@@ -11,12 +11,13 @@
   --fw-md: 400;
   --fw-bd: 500;
   --container-sm: 0 1.25rem;
-  --container-md: 0 5rem;
-  --container-lg: 0 10rem;
+  --container-md: 0 2rem;
+  --container-lg: 0 5rem;
 }
 
 .main-container{
-  display: block;
+  display: flex;
   position: relative;
+  height: calc(100vh - 75px);
 }
 

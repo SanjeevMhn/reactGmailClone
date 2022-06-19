@@ -1,0 +1,26 @@
+.rightNav {
+  //flex: 0 0 72px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: var(--dark-bg);
+  right: 0;
+  margin-left: auto;
+  margin-right: 0;
+  .appsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .appListLink {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 12px;
+      img {
+        width: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}

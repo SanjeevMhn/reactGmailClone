@@ -1,0 +1,11 @@
+@import '../App.css';
+
+.secondaryNav{
+    padding: 0 var(--container-sm);
+    background-color: var(--dark-bg);
+    border-bottom: 1px solid var(--grey-bg);
+    border-left: 1px solid var(--grey-bg);
+    border-right: 1px solid var(--grey-bg);
+    flex: 1;
+    max-height: 50px;
+}
