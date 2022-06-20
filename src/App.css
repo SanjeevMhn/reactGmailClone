@@ -1,6 +1,6 @@
 @import './reset.css';
 
-:root{
+:root {
   --dark-bg: #111111;
   --grey-bg: #303030;
   --active-bg: #595959;
@@ -10,14 +10,76 @@
   --fw-rg: 300;
   --fw-md: 400;
   --fw-bd: 500;
-  --container-sm: 0 1.25rem;
-  --container-md: 0 2rem;
-  --container-lg: 0 5rem;
+  --container-sm: 0 1.15rem;
+  --container-md: 0 1.5rem;
+  --container-lg: 0 2rem;
 }
 
-.main-container{
+.main-container {
   display: flex;
   position: relative;
   height: calc(100vh - 75px);
 }
 
+.checkbox-container {
+  display: block;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-container .checkmark {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 3px solid var(--grey-bg);
+  border-radius: 2px;
+}
+
+.checkbox-container .checkmark:after {
+  content: '';
+  position: absolute;
+  height: 12px;
+  width: 6px;
+  border: solid var(--grey-bg);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  left: 4px;
+  display: none;
+}
+
+.checkbox-container:hover input[type="checkbox"]~.checkmark {
+  border-color: var(--light-grey-bg);
+}
+
+.checkbox-container input[type="checkbox"]:checked~.checkmark {
+  background-color: var(--light-grey-bg);
+  border-color: var(--light-grey-bg);
+}
+
+.checkbox-container input[type="checkbox"]:checked~.checkmark:after {
+  display: block;
+}
+
+.icon-container{
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-container img{
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,11 +1,24 @@
 @import '../App.css';
 
-.secondaryNav{
-    padding: 0 var(--container-sm);
+.secondaryNav {
+    padding: var(--container-sm);
     background-color: var(--dark-bg);
     border-bottom: 1px solid var(--grey-bg);
     border-left: 1px solid var(--grey-bg);
     border-right: 1px solid var(--grey-bg);
     flex: 1;
     max-height: 50px;
+    display: flex;
+    align-items: center;
+
+    .checkDropdown {
+        display: flex;
+        align-items: center;
+
+    }
+
+    .dropdownContainer {
+        position: relative;
+        padding-left: 2px;
+    }
 }
