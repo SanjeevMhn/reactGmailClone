@@ -12,18 +12,20 @@ const MailSelection = () => {
 
             </div>
             <div className={styles.dropdownContainer}>
-                <button className="icon-container">
+                <button className={styles.iconContainer}>
                     <img src="src/assets/images/fill-arr-down.svg" alt="" />
                 </button>
             </div>
             <div className={styles.redoContainer}>
-                <button type="button" className="icon-container">
+                <button type="button" className={styles.iconContainer}>
                     <img src="src/assets/images/redo-arr.svg" alt="" />
                 </button>
             </div>
-            <button className={`${styles.moreOptions} ${styles.iconContainer}`}>
-                <img src="" alt="" />
-            </button>
+            <div className={styles.moreOptions}>
+                <button className={styles.iconContainer}>
+                    <img src="src/assets/images/dots-vertical.svg" alt="" />
+                </button>
+            </div>
 
             <div className={styles.emailCount}>
                 <span className={styles.emailNum}>
@@ -31,10 +33,10 @@ const MailSelection = () => {
                 </span>
                 <div className={styles.prevToNext}>
                     <button className={`${styles.iconContainer} ${styles.prevIcon}`}>
-                        <img src="" alt="" />
+                        <img src="src/assets/images/outline-arr-left.svg" alt="" />
                     </button>
                     <button className={`${styles.iconContainer} ${styles.nextIcon}`}>
-                        <img src="" alt="" />
+                        <img src="src/assets/images/outline-arr-right.svg" alt="" />
                     </button>
                 </div>
             </div>

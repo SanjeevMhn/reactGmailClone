@@ -21,13 +21,17 @@
   height: calc(100vh - 75px);
 }
 
+.inner-container{
+  flex: 1;
+}
+
 .checkbox-container {
   display: block;
   position: relative;
   user-select: none;
   cursor: pointer;
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
 }
 
 .checkbox-container input[type="checkbox"] {
@@ -54,7 +58,8 @@
   border: solid var(--grey-bg);
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
-  left: 4px;
+  left: 3px;
+  bottom: 2px;
   display: none;
 }
 
@@ -71,15 +76,3 @@
   display: block;
 }
 
-.icon-container{
-  height: 25px;
-  width: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icon-container img{
-  width: 100%;
-  object-fit: cover;
-}
